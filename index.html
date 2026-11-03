@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adi On Backend's Codepen Clone</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="app-header">
+            <div class="logo">CodePen Clone</div>
+        </header>
+
+        <main class="container">
+            <section class="editors-container">
+                <!-- HTML Editor -->
+                <div class="editor-box">
+                    <div class="editor-header html-label">
+                        <textarea
+                            id="html-code"
+                            spellcheck="false"
+                            placeholder="Enter HTML Code Here...."
+                        >
+                        <h1>Hello World</h1>
+                        </textarea>
+                    </div>
+                </div>
+
+                <!-- CSS Editor -->
+                <div class="editor-box">
+                    <div class="editor-header css-label">
+                        <textarea
+                            id="css-code"
+                            spellcheck="false"
+                            placeholder="Enter CSS Code Here...."
+                        >
+h1 {
+    color: red;
+}
+                        </textarea>
+                    </div>
+                </div>
+                <!-- JS Editor -->
+
+                <div class="editor-box">
+                    <div class="editor-header js-label">
+                        <textarea
+                            id="js-code"
+                            spellcheck="false"
+                            placeholder="Enter JS Code Here...."
+                        >
+function showAlert() {
+    alert("Hi there");
+}
+                        </textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Output -->
+            <section class="output-container">
+                <div class="output-header">Output</div>
+                <iframe id="output-frame" title="Output Preview"></iframe>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
